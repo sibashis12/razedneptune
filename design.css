@@ -198,110 +198,6 @@ header{
     font-size:1.3125rem;
 }
 
-    
-#checker1{
-    display:none;
-}
-#visiter1{
-    position:relative;
-}
-#checker1:checked + #visiter1::after{
-    content:"Visited";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:var(--tcolor, black);
-    color:var(--sp, gold);
-    
-}
-#checker2{
-    display:none;
-}
-#visiter2{
-    position:relative;
-}
-#checker2:checked + #visiter2::after{
-    content:"Visited";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:var(--tcolor, black);
-    color:var(--sp, gold);
-    
-}
-#checker3{
-    display:none;
-}
-#visiter3{
-    position:relative;
-}
-#checker3:checked + #visiter3::after{
-    content:"Visited";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:var(--tcolor, black);
-    color:var(--sp, gold);
-    
-}
-#checker4{
-    display:none;
-}
-#visiter4{
-    position:relative;
-}
-#checker4:checked + #visiter4::after{
-    content:"Visited";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:var(--tcolor, black);
-    color:var(--sp, gold);
-    
-}
-#checker5{
-    display:none;
-}
-#visiter5{
-    position:relative;
-}
-#checker5:checked + #visiter5::after{
-    content:"Visited";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:var(--tcolor, black);
-    color:var(--sp, gold);
-    
-}
-#checker6{
-    display:none;
-}
-#visiter6{
-    position:relative;
-}
-#checker6:checked + #visiter6::after{
-    content:"Visited";
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background:var(--tcolor, black);
-    color:var(--sp, gold);
-    
-}
-
 .grid-container{
     display:grid;
     justify-content: center;
@@ -382,12 +278,8 @@ header{
 }
 
 #contact-me{
-    background-image: url("kgp.jpeg");
-    background-size:cover;
-    background-color:white;
-    background-blend-mode: multiply;  
-    width:100vw;
-    height:100vh;
+    background-color:var(--bcolor, white);
+    color:var(--color, aqua);
 }
 .details{
     font-size:2.25rem;
