@@ -1,6 +1,7 @@
 *{
   font-family:Roboto;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  --hoverer:midnightblue;
 }
 body, html, div, header, nav, ul, li, a{
     margin:0;
@@ -18,6 +19,7 @@ html, body{
     --cardcolor:black;
     --cardbg:#00FFFF;
     --sp:black;
+    --hoverer:midnightblue;
 }
 #light-mode:target{
     --color:darkcyan;
@@ -28,6 +30,7 @@ html, body{
     --cardcolor:black;
     --cardbg:#00FFFF;
     --sp:gold;
+    --hoverer:darkcyan;
 }
 header{
     position:fixed;
@@ -288,9 +291,10 @@ i{
     position:relative;
 }
 i:hover{
-  color:teal;
+  color:;
 }
 i:hover::after{
+  font-size:1rem;
   position:absolute;
   background-color:beige;
   color:black;
@@ -298,8 +302,7 @@ i:hover::after{
   padding:0.5rem;
   text-align:center;
   top:100%;
-  left:0;
-  right:0;
+  width:auto;
 }
 @supports (position:sticky){
     header{
