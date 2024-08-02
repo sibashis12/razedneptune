@@ -75,7 +75,7 @@
   }
   .nav a:hover{
       --color:gold;
-      --bcolor:darkgray;
+      --bcolor:#004953;
       --border:gold;
       text-decoration: underline;
   }
@@ -97,6 +97,13 @@
       margin:0;
       text-align:center;
   }
+  .left a{
+    color:darkcyan;
+  }
+  .left a:hover{
+    color:#291973;
+    text-decoration:none;
+  }
   .right{
       width:50%;
       margin:0;
@@ -113,7 +120,7 @@
       display:inline-block;
       border:2px solid var(--tcolor, black);
       background-color: var(--color, darkcyan);
-      color: var(--nyccolor, gold);
+      color: var(--nyccolor, gold) !important;
       text-decoration: none;
   }
   .box:hover{
@@ -132,7 +139,7 @@
       font-family:monospace;
       color:var(--color, darkcyan);
       background-color:var(--bcolor, white);
-      height:3.5rem;
+      min-height:3.5rem;
       text-align: center;
       text-decoration: underline;
       font-size:2.5rem;
@@ -200,82 +207,7 @@
       font-size:1.3125rem;
   }
   
-  .grid-container{
-      display:grid;
-      justify-content: center;
-      width:100vw;
-      height:220vh;
-      margin-top:25vh;
-      margin-bottom:25vh;
-      margin-right:5vw;
-      margin-left:5vw;
-      margin:0;
-      grid-auto-rows: minmax(150 px, auto);
-      grid-gap:5vw;
-      grid-template-columns: repeat(8, 5vw);
-      background-color: var(--bcolor, white);
-  }
-  .grid{
-      display:flex;
-      justify-content:center;
-      align-items: center;
-      font-size:1.3rem;
-      font-weight:100;
-      border:2px solid var(--tcolor, black);
-      margin:0;
-      color:var(--cardcolor, black);
-      background-color:var(--cardbg, aqua);
-      box-shadow: 0 0 5px 2px;
-      border-radius: 2px;
-      
-      -webkit-transition: all 0.7s;
-      -moz-transition: all 0.7s;
-      -o-transition: all 0.7s; 
-      transition: all 0.7s;
-  }
-  .grid:hover{
-      --cardcolor:gold;
-      --cardbg:navy;
-      --tcolor:gold;
-      transform: scale(1.025);
-      font-size:1.3125rem;
-  }
-  
-  .grid1{
-      grid-column: span 5;
-      
-  }
-  .icon{
-      height:100%;
-      width:50%;
-      border-right:1px solid var(--tcolor, black);
-  }
-  .grid2{
-      grid-column: span 3;
-  }
-  .grid3{
-      grid-column:span 3;
-  }
-  .grid4{
-      grid-row: span 2;
-      grid-column: span 2;
-      flex-direction:column;
-      justify-content: flex-start;
-  }
-  .icon.top{
-      border-right:0;
-      border-bottom: 1px solid var(--tcolor, black);
-      height:30%;
-      width:100%;
-  }
-  .icon.top.no{
-      border-bottom:0;
-      border-top: 1px solid var(--tcolor, black);
-  }
-  .grid5{
-      grid-column:span 6;
-  }
-  
+
   #contact-me{
       background-color:var(--bcolor, white);
       color:var(--color, aqua);
@@ -284,7 +216,7 @@
       display:flex;
       justify-content: space-around;
       align-items: center;
-      margin-bottom:2rem;
+      padding-bottom:3rem;
   }
   i{
       color:teal;
@@ -295,6 +227,9 @@
   .container div{
     position:relative;
     width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
   .container div:hover::after{
     font-size:1rem;
@@ -305,8 +240,37 @@
     padding:0.5rem;
     text-align:center;
     top:100%;
-    left:0;
-    right:0;
+    left:20%;
+    right:20%;
+  }
+  .container div a{
+    text-decoration:none;
+    font-size:2rem;
+    color:teal;
+  }
+  .container div a:hover{
+    color:var(--hoverer, midnightblue);
+    text-decoration:underline;
+  }
+
+  #skills{
+    background-image:url("kgp.jpeg");
+    background-size:cover;
+    background-color:grey;
+    background-blend-mode: multiply;
+  }
+  #skills div{
+    color:var(--cardbg, cyan);
+    font-size:2rem;
+    padding:0.5rem 2rem;
+  }
+  #skills a{
+    text-decoration:none;
+    color:inherit;
+  }
+  #skills a:hover{
+    text-decoration:underline;
+    color:gold;
   }
   @supports (position:sticky){
       header{
@@ -320,12 +284,16 @@
   
   @media (max-width:700px) or (max-height:700px){
       *{
-          font-size:0.85em;
+          font-size:0.75em;
       }
+      .hide{
+          display:none;
+      }
+
   }
   
   @media (max-width:500px) or (max-height:500px){
       *{
-          font-size:0.75em;
+          font-size:0.65em;
       }
   }
