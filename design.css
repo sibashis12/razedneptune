@@ -18,7 +18,7 @@ html, body{
     --cardcolor:black;
     --cardbg:#00FFFF;
     --sp:black;
-    --hoverer:midnightblue;
+    --hoverer:cyan;
 }
 #light-mode:target{
     --color:darkcyan;
@@ -29,7 +29,7 @@ html, body{
     --cardcolor:black;
     --cardbg:#00FFFF;
     --sp:gold;
-    --hoverer:darkcyan;
+    --hoverer:midnightblue;
 }
 header{
     position:fixed;
@@ -286,7 +286,7 @@ header{
     align-items: center;
 }
 i{
-    color:var(--color, darkcyan);
+    color:teal;
     position:relative;
 }
 i:hover{
@@ -301,7 +301,6 @@ i:hover::after{
   padding:0.5rem;
   text-align:center;
   top:100%;
-  width:auto;
 }
 @supports (position:sticky){
     header{
