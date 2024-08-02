@@ -1,7 +1,6 @@
 *{
   font-family:Roboto;
   box-sizing: border-box;
-  --hoverer:midnightblue;
 }
 body, html, div, header, nav, ul, li, a{
     margin:0;
@@ -291,7 +290,7 @@ i{
     position:relative;
 }
 i:hover{
-  color:;
+  color:var(--hoverer, midnightblue);
 }
 i:hover::after{
   font-size:1rem;
