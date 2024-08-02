@@ -294,6 +294,7 @@
   }
   .container div{
     position:relative;
+    width:100%;
   }
   .container div:hover::after{
     font-size:1rem;
