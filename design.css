@@ -226,9 +226,10 @@ header{
     box-shadow: 0 0 5px 2px;
     border-radius: 2px;
     
-    -webkit-transition: background-color 0.7s, color 0.7s, transform 0.7s;
-    -moz-transition: background-color 0.7s, color 0.7s, transform 0.7s;
-    transition: background-color 0.7s, color 0.7s, transform 0.7s;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -o-transition: all 0.7s; 
+    transition: all 0.7s;
 }
 .grid:hover{
     --cardcolor:gold;
@@ -236,10 +237,6 @@ header{
     --tcolor:gold;
     transform: scale(1.025);
     font-size:1.3125rem;
-    
-    -webkit-transition: background-color 0.7s, color 0.7s, transform 0.7s;
-    -moz-transition: background-color 0.7s, color 0.7s, transform 0.7s;
-    transition: background-color 0.7s, color 0.7s, transform 0.7s;
 }
 
 .grid1{
@@ -281,45 +278,28 @@ header{
     background-color:var(--bcolor, white);
     color:var(--color, aqua);
 }
-.details{
-    font-size:2.25rem;
-    margin:5vh;
-    color:var(--cardbg, aqua);
-}
-.form-item{
-    align-self: center;
-    text-align: center;
-    margin:5vh;
-    width:100%;
-}
-.form-label{
-    height:2rem;
-    font-family:sans-serif;
-    color:var(--cardbg, aqua);
-}
-.data{
-    width:80%;
-    font-size:1.5rem;
-    height:2rem;
-}
-.data:focus{
-    background-color: var(--nyccolor, gold);
-    color:var(--color, darkcyan);
-}
-.center {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 .container{
     display:flex;
     justify-content: space-around;
     align-items: center;
 }
 i{
-    color:var(--nyccolor, gold);
-    height:2rem;
-    width:2rem;
+    color:var(--color, darkcyan);
+    position:relative;
+}
+i:hover{
+  color:teal;
+}
+i:hover::after{
+  position:absolute;
+  background-color:beige;
+  color:black;
+  content:"Visit";
+  padding:0.5rem;
+  text-align:center;
+  top:100%;
+  left:0;
+  right:0;
 }
 @supports (position:sticky){
     header{
