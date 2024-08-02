@@ -311,7 +311,16 @@ header{
   justify-content: space-around;
   align-items: center;
 }
-
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+i{
+    color:var(--nyccolor, gold);
+    height:2rem;
+    width:2rem;
+}
 @supports (position:sticky){
     header{
         position:sticky;
