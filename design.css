@@ -221,7 +221,6 @@
       justify-content: space-around;
       align-items: center;
       padding-bottom:3rem;
-      flex-wrap:wrap;
   }
   i{
       color:teal;
